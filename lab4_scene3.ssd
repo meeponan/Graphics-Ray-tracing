@@ -1,0 +1,44 @@
+screen 800 600 0 0 0
+#Wireframe of a green cube
+color 0 255 0
+eye 10. 0 4.50
+gaze -10. 0 -4.50
+upvector -1  0  0
+#ortho 5.6 4.2 0 30
+perspective 45 -1 -4
+floor 2.5 -40 10 -20 20
+#axis 4 10
+
+identity
+#translate 0.0 -1 0
+scale 4 2 2
+
+diffuse 0.5 0 0
+specular 0.0 0 1 100
+light 0.6 0.60  0.60
+vertex 10. 0 4.50
+light 0.3 0.3  0.30
+vertex 0 0   1
+#light 0. 0.0  0.80
+#vertex 0.40134450 0.09972850 -0.41048164
+#vertex 1 -0.2 0.4
+ambient 0. 0. 0.
+
+
+shading 1
+diffuse 1 0 0.8 
+specular 0 1 0 100
+#specular 0.4 0 0 10
+identity
+scale 3 3 3
+translate -2.0 -3.25 -1.5
+
+mesh sphere_mesh_42.off 1
+
+diffuse 0.70 0.10 0.80
+identity
+scale 1 0.5 2.5
+translate -2.0 3.25 -1.5
+sphere 
+
+save lab3_scene3.ppm
